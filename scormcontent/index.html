@@ -190,7 +190,7 @@ function hookProxy(funcName) {
 
   return;
 }
-
+console.log(window.parent, window.parent.location);
 var LMSProxyFuncs = pick(LMSProxySelections, window.parent, Function.prototype);
 
 function noAPIFunction (funcName) {
